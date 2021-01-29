@@ -12,3 +12,4 @@ Joint_Dataset_B&G + WD.xlsx - joint dataset (previously edited in OpenRefine). <
 **NER** <br />
 NER.csv - data for classifier evaluation. <br />
 NER_Evaluation.ipynb - code for classifier evaluation, outcome - NER_report.txt. <br />
+For a knowledge graph and detailed NER analysis (texts used, manual and spaCy annotations, statistics and error analysis, etc.) please visit [NER drive folder.]( https://drive.google.com/drive/folders/1_nRSHk1fW99ThyVc3GIp9iZWXWwjHcOE?usp=sharing)
