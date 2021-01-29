@@ -1,0 +1,37 @@
+gold	:[['person', 15], ['gpe', 8], ['event', 2], ['language', 1], ['date', 15], ['no_label', 2], ['work_of_art', 29], ['norp', 6], ['org', 14]]
+pred	:[['gpe', 22], ['person', 19], ['event', 5], ['no_label', 15], ['date', 15], ['work_of_art', 2], ['norp', 9], ['org', 5]]
+
+input:NER.csv
+
+accuracy_score:0.45652173913043476
+
+classification report:
+              precision    recall  f1-score   support
+
+        date       0.93      0.93      0.93        15
+       event       0.40      1.00      0.57         2
+         gpe       0.23      0.62      0.33         8
+    language       0.00      0.00      0.00         1
+    no_label       0.00      0.00      0.00         2
+        norp       0.67      1.00      0.80         6
+         org       0.60      0.21      0.32        14
+      person       0.53      0.67      0.59        15
+ work_of_art       1.00      0.07      0.13        29
+
+    accuracy                           0.46        92
+   macro avg       0.48      0.50      0.41        92
+weighted avg       0.72      0.46      0.43        92
+
+
+confusion matrix:
+
+[[14  0  0  0  1  0  0  0  0]
+ [ 0  2  0  0  0  0  0  0  0]
+ [ 0  0  5  0  2  1  0  0  0]
+ [ 0  0  1  0  0  0  0  0  0]
+ [ 0  0  2  0  0  0  0  0  0]
+ [ 0  0  0  0  0  6  0  0  0]
+ [ 0  1  3  0  2  2  3  3  0]
+ [ 0  2  1  0  1  0  1 10  0]
+ [ 1  0 10  0  9  0  1  6  2]]
+row is gold  /	column is predicted
